@@ -150,7 +150,7 @@ function DrawerAppBar({ children }) {
               ...HeadernavItemWrap,
             }}
           >
-            {HeadernavItems.map((item, index) => (
+            {/* {HeadernavItems.map((item, index) => (
               <Button
                 onClick={() => navigate(item.url)}
                 key={index}
@@ -162,7 +162,7 @@ function DrawerAppBar({ children }) {
               >
                 {item.name}
               </Button>
-            ))}
+            ))} */}
           </Grid>
           <Grid container sx={{ pb: 1.5, pt: { sm: 0, xs: 1.5 } }}>
             <Grid
