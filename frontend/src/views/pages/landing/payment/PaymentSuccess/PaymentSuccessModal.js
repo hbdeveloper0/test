@@ -24,7 +24,7 @@ export default function PaymentSuccessModal() {
   useEffect(() => {
     const getData = async() => {
       if(pName === 'wooppay'){
-        // const response = await myAxios.post('/payment/change-woopkassa-payment-status', {pId: pId})
+        const response = await myAxios.post('/payment/change-woopkassa-payment-status', {pId: pId})
       }else if(pName === 'qiwi'){
         // const response = await myAxios.post('/payment/update-citypay-payment-status', {pId: pId})
       }
@@ -38,7 +38,7 @@ export default function PaymentSuccessModal() {
         const data = response.data.data.payment_data;
         if(data.ordered === false){
           console.log('place order');
-          const placeOrder = await myAxios.post('/order/place-kinguin-order', {paymentId: data._id, productId: data.product._id, email: data.userEmail});
+          // const placeOrder = await myAxios.post('/order/place-kinguin-order', {paymentId: data._id, productId: data.product._id, email: data.userEmail});
 
         }else{
           console.log('ok')
