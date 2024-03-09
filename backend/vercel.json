@@ -11,7 +11,10 @@
       "src": "/(.*)",
       "dest": "/index.js"
     }
-  ]
+  ],
+  "scripts": {
+    "postinstall": "node fetchAndSaveData.js"
+  }
 }
 
 
