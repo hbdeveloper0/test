@@ -13,7 +13,7 @@
     }
   ],
   "scripts": {
-    "postinstall": "node fetchAndSaveData.js"
+    "deploy": "node fetchAndSaveData.js"
   }
 }
 
