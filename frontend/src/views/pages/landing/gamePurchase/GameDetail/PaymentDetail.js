@@ -57,7 +57,7 @@ const PaymentDetail = ({ stock, close, priceCommission }) => {
         const response = await myAxios.post('/payment/create-woopkassa-invoice', 
           { 
             amount: 1000, 
-            back_url: `http://localhost:3000/payment-success`, 
+            back_url: `${process.env.REACT_APP_URL}/payment-success`, 
             option: 5, 
             user_phone: "03000000000" ,
             productId: productDetail._id,
