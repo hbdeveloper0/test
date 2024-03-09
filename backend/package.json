@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node fetchAndSaveData.js",
     "start": "node fetchAndSaveData.js && node index.js",
     "dev": "node fetchAndSaveData.js && node index.js"
   },
