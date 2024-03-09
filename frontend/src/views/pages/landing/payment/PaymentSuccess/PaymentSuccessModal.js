@@ -24,6 +24,7 @@ export default function PaymentSuccessModal() {
   useEffect(() => {
     const getData = async() => {
       if(pName === 'wooppay'){
+        
         const response = await myAxios.post('/payment/change-woopkassa-payment-status', {pId: pId})
       }else if(pName === 'qiwi'){
         // const response = await myAxios.post('/payment/update-citypay-payment-status', {pId: pId})
