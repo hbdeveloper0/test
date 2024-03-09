@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "node backend/fetchAndSaveData.js && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node fetchAndSaveData.js && node index.js"
   },
   "author": "",
   "license": "ISC",
